@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>834842967457-123vm32j3t0hm5uaqvit6ahpo52efekj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.834842967457-123vm32j3t0hm5uaqvit6ahpo52efekj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>834842967457-3iagnuqnje3f7ekjk10m18apunnlbk7t.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCaJ3d46EuwcupQWwLTBu9u5CG6sIr7iEY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>834842967457</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.empire-groupuk.thelinguisticshub</string>
+	<key>PROJECT_ID</key>
+	<string>the-linguist-hub</string>
+	<key>STORAGE_BUCKET</key>
+	<string>the-linguist-hub.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:834842967457:ios:49b9ef00530d712eb35fe0</string>
+	<key>DATABASE_URL</key>
+	<string>https://the-linguist-hub.firebaseio.com</string>
+</dict>
+</plist>

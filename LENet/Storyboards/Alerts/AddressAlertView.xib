@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressAlertView" customModule="The_Linguist_Hub" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="siO-Ei-3kZ" id="AKl-K1-Zoy"/>
+                <outlet property="bgView" destination="5JZ-3p-iMy" id="sGe-os-uYJ"/>
+                <outlet property="btnSave" destination="IK0-wH-DoK" id="biu-Lx-WQI"/>
+                <outlet property="parentView" destination="LtN-t5-Z7e" id="Ex1-5u-3MV"/>
+                <outlet property="txtAddress1" destination="h5q-Bd-EGW" id="dWm-ru-cP8"/>
+                <outlet property="txtAddress2" destination="NnK-7S-SxB" id="F0R-Dn-xrJ"/>
+                <outlet property="txtAddress3" destination="V4C-O3-bkD" id="HQi-4e-bCT"/>
+                <outlet property="txtAddress4" destination="rDJ-YY-623" id="w6I-LN-n7W"/>
+                <outlet property="txtCountry" destination="nLO-Y4-5LT" id="K41-CN-eIo"/>
+                <outlet property="txtCounty" destination="gej-Cv-P6k" id="PST-TI-HQm"/>
+                <outlet property="txtPostCode" destination="NmZ-oi-P1w" id="7qQ-C9-mTu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LtN-t5-Z7e">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JZ-3p-iMy">
+                    <rect key="frame" x="0.0" y="8" width="414" height="888"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7K-EE-5W5">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="898"/>
+                            <connections>
+                                <action selector="actionDismiss:" destination="-1" eventType="touchUpInside" id="wN4-O9-bFp"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siO-Ei-3kZ" customClass="CardView" customModule="The_Linguist_Hub" customModuleProvider="target">
+                            <rect key="frame" x="48" y="223" width="318" height="372"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-CY-XP3">
+                                    <rect key="frame" x="134" y="-25" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="Dd3-dq-LFX"/>
+                                        <constraint firstAttribute="height" constant="50" id="Yjg-N5-92u"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWc-xM-aSi">
+                                    <rect key="frame" x="8" y="33" width="302" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="SoT-RN-bb7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="16"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 1" textAlignment="natural" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="h5q-Bd-EGW" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="62" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="9Yk-dt-eHF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnK-7S-SxB" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="100" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="IBf-Wr-S4F"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-O3-bkD" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="138" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ztt-Yg-NF7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDJ-YY-623" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="176" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="v29-5L-kqe"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Post Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmZ-oi-P1w" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="214" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Qav-XV-LWH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gej-Cv-P6k" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="252" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="XTa-lU-hAT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLO-Y4-5LT" customClass="customUITextField" customModule="The_Linguist_Hub" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="290" width="302" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="mNt-SM-N4i"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-wH-DoK">
+                                    <rect key="frame" x="8" y="328" width="302" height="35"/>
+                                    <color key="backgroundColor" name="colorPurpleLogo"/>
+                                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
+                                    <state key="normal" title="Save">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSave:" destination="-1" eventType="touchUpInside" id="b3m-JU-H5p"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="gej-Cv-P6k" firstAttribute="top" secondItem="NmZ-oi-P1w" secondAttribute="bottom" constant="8" id="0kw-W9-XBw"/>
+                                <constraint firstItem="V4C-O3-bkD" firstAttribute="leading" secondItem="rDJ-YY-623" secondAttribute="leading" id="2yT-ql-8lE"/>
+                                <constraint firstAttribute="bottom" secondItem="IK0-wH-DoK" secondAttribute="bottom" constant="9" id="3OE-lY-Krc"/>
+                                <constraint firstItem="rDJ-YY-623" firstAttribute="top" secondItem="V4C-O3-bkD" secondAttribute="bottom" constant="8" id="7Iz-bH-FYR"/>
+                                <constraint firstItem="nLO-Y4-5LT" firstAttribute="top" secondItem="gej-Cv-P6k" secondAttribute="bottom" constant="8" id="9OB-UV-CKB"/>
+                                <constraint firstItem="IK0-wH-DoK" firstAttribute="top" secondItem="nLO-Y4-5LT" secondAttribute="bottom" constant="8" id="AR6-qL-Nqs"/>
+                                <constraint firstItem="rDJ-YY-623" firstAttribute="trailing" secondItem="NmZ-oi-P1w" secondAttribute="trailing" id="B0z-Dm-i7m"/>
+                                <constraint firstItem="nLO-Y4-5LT" firstAttribute="leading" secondItem="IK0-wH-DoK" secondAttribute="leading" id="CDO-ia-SOl"/>
+                                <constraint firstItem="nLO-Y4-5LT" firstAttribute="trailing" secondItem="IK0-wH-DoK" secondAttribute="trailing" id="EyH-vG-4OB"/>
+                                <constraint firstItem="h5q-Bd-EGW" firstAttribute="trailing" secondItem="NnK-7S-SxB" secondAttribute="trailing" id="Mue-tx-Ydp"/>
+                                <constraint firstItem="NmZ-oi-P1w" firstAttribute="top" secondItem="rDJ-YY-623" secondAttribute="bottom" constant="8" id="NPR-TG-FX5"/>
+                                <constraint firstItem="NmZ-oi-P1w" firstAttribute="trailing" secondItem="gej-Cv-P6k" secondAttribute="trailing" id="OJh-J3-uco"/>
+                                <constraint firstItem="oWc-xM-aSi" firstAttribute="leading" secondItem="siO-Ei-3kZ" secondAttribute="leading" constant="8" id="QUl-5y-q4t"/>
+                                <constraint firstItem="gej-Cv-P6k" firstAttribute="trailing" secondItem="nLO-Y4-5LT" secondAttribute="trailing" id="T8D-sa-Ap1"/>
+                                <constraint firstItem="V4C-O3-bkD" firstAttribute="trailing" secondItem="rDJ-YY-623" secondAttribute="trailing" id="TaW-He-oll"/>
+                                <constraint firstItem="NnK-7S-SxB" firstAttribute="top" secondItem="h5q-Bd-EGW" secondAttribute="bottom" constant="8" id="VxJ-Sx-hxE"/>
+                                <constraint firstItem="0RS-CY-XP3" firstAttribute="centerX" secondItem="siO-Ei-3kZ" secondAttribute="centerX" id="WQV-jR-9mv"/>
+                                <constraint firstItem="gej-Cv-P6k" firstAttribute="leading" secondItem="nLO-Y4-5LT" secondAttribute="leading" id="Ycr-Wx-HjJ"/>
+                                <constraint firstItem="NnK-7S-SxB" firstAttribute="trailing" secondItem="V4C-O3-bkD" secondAttribute="trailing" id="cwP-kk-LCp"/>
+                                <constraint firstAttribute="trailing" secondItem="oWc-xM-aSi" secondAttribute="trailing" constant="8" id="dPz-YM-t3Q"/>
+                                <constraint firstAttribute="height" constant="372" id="f1i-3v-fVF"/>
+                                <constraint firstItem="0RS-CY-XP3" firstAttribute="centerY" secondItem="siO-Ei-3kZ" secondAttribute="top" id="fvf-oz-1wg"/>
+                                <constraint firstItem="rDJ-YY-623" firstAttribute="leading" secondItem="NmZ-oi-P1w" secondAttribute="leading" id="gdJ-a5-7FI"/>
+                                <constraint firstItem="h5q-Bd-EGW" firstAttribute="top" secondItem="oWc-xM-aSi" secondAttribute="bottom" constant="8" id="hGf-n8-xgV"/>
+                                <constraint firstItem="NnK-7S-SxB" firstAttribute="leading" secondItem="V4C-O3-bkD" secondAttribute="leading" id="hcz-jh-zGH"/>
+                                <constraint firstItem="oWc-xM-aSi" firstAttribute="top" secondItem="0RS-CY-XP3" secondAttribute="bottom" constant="8" id="mLM-Gj-2Mq"/>
+                                <constraint firstItem="V4C-O3-bkD" firstAttribute="top" secondItem="NnK-7S-SxB" secondAttribute="bottom" constant="8" id="njh-0V-8Fz"/>
+                                <constraint firstItem="h5q-Bd-EGW" firstAttribute="leading" secondItem="oWc-xM-aSi" secondAttribute="leading" id="rcq-wC-sLz"/>
+                                <constraint firstItem="h5q-Bd-EGW" firstAttribute="trailing" secondItem="oWc-xM-aSi" secondAttribute="trailing" id="sdx-xt-MYh"/>
+                                <constraint firstItem="h5q-Bd-EGW" firstAttribute="leading" secondItem="NnK-7S-SxB" secondAttribute="leading" id="xxy-qo-1WX"/>
+                                <constraint firstItem="NmZ-oi-P1w" firstAttribute="leading" secondItem="gej-Cv-P6k" secondAttribute="leading" id="zgV-D5-Ugh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69836597710000003" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="a7K-EE-5W5" firstAttribute="top" secondItem="5JZ-3p-iMy" secondAttribute="top" constant="-44" id="7xY-Zz-97p"/>
+                        <constraint firstItem="siO-Ei-3kZ" firstAttribute="leading" secondItem="5JZ-3p-iMy" secondAttribute="leading" constant="48" id="8H2-PB-mQ6"/>
+                        <constraint firstAttribute="bottom" secondItem="a7K-EE-5W5" secondAttribute="bottom" constant="34" id="8V8-5A-8EU"/>
+                        <constraint firstItem="siO-Ei-3kZ" firstAttribute="centerY" secondItem="5JZ-3p-iMy" secondAttribute="centerY" constant="-35" id="ALV-xb-tMg"/>
+                        <constraint firstItem="siO-Ei-3kZ" firstAttribute="centerX" secondItem="5JZ-3p-iMy" secondAttribute="centerX" id="EzC-8S-Ckj"/>
+                        <constraint firstItem="a7K-EE-5W5" firstAttribute="leading" secondItem="5JZ-3p-iMy" secondAttribute="leading" id="F6v-C4-JSd"/>
+                        <constraint firstAttribute="trailing" secondItem="a7K-EE-5W5" secondAttribute="trailing" id="wLO-OB-Sik"/>
+                        <constraint firstAttribute="trailing" secondItem="siO-Ei-3kZ" secondAttribute="trailing" constant="48" id="xJg-WV-9zc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ciU-QM-EG0"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5JZ-3p-iMy" firstAttribute="top" secondItem="ciU-QM-EG0" secondAttribute="top" constant="-36" id="31J-Tq-fgF"/>
+                <constraint firstItem="ciU-QM-EG0" firstAttribute="bottom" secondItem="5JZ-3p-iMy" secondAttribute="bottom" constant="-34" id="E9g-XZ-8GC"/>
+                <constraint firstItem="ciU-QM-EG0" firstAttribute="trailing" secondItem="5JZ-3p-iMy" secondAttribute="trailing" id="lg4-U2-Hrq"/>
+                <constraint firstItem="5JZ-3p-iMy" firstAttribute="leading" secondItem="ciU-QM-EG0" secondAttribute="leading" id="yVI-9U-T7B"/>
+            </constraints>
+            <point key="canvasLocation" x="371.01449275362324" y="157.36607142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="NmZ-oi-P1w">
+            <size key="intrinsicContentSize" width="58.5" height="16"/>
+        </designable>
+        <designable name="NnK-7S-SxB">
+            <size key="intrinsicContentSize" width="84" height="16"/>
+        </designable>
+        <designable name="V4C-O3-bkD">
+            <size key="intrinsicContentSize" width="84.5" height="16"/>
+        </designable>
+        <designable name="gej-Cv-P6k">
+            <size key="intrinsicContentSize" width="41" height="16"/>
+        </designable>
+        <designable name="h5q-Bd-EGW">
+            <size key="intrinsicContentSize" width="82.5" height="16"/>
+        </designable>
+        <designable name="nLO-Y4-5LT">
+            <size key="intrinsicContentSize" width="45.5" height="16"/>
+        </designable>
+        <designable name="rDJ-YY-623">
+            <size key="intrinsicContentSize" width="84.5" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="logo" width="96" height="96"/>
+        <namedColor name="colorPurpleLogo">
+            <color red="0.67843137254901964" green="0.29019607843137257" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
